@@ -1,0 +1,45 @@
+{
+  "applications": "*",
+  "changelogDate": "20220804032101",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "bet",
+  "fields": [
+    {
+      "fieldName": "betDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "totalPoints",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "homeScore",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "visitantScore",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Bet",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "match",
+      "relationshipName": "match",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl",
+  "skipClient": true
+}

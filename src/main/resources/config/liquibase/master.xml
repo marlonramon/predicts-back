@@ -17,7 +17,18 @@
     <property name="datetimeType" value="datetime" dbms="postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032100_added_entity_Sweepstake.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032101_added_entity_Bet.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032102_added_entity_Championship.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032103_added_entity_Team.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032104_added_entity_Match.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032105_added_entity_Round.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20220804032100_added_entity_constraints_Sweepstake.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032101_added_entity_constraints_Bet.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032102_added_entity_constraints_Championship.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032104_added_entity_constraints_Match.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220804032105_added_entity_constraints_Round.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

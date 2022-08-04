@@ -48,6 +48,13 @@ public class CacheConfiguration {
             createCache(cm, com.marlonramon.predicts.domain.User.class.getName());
             createCache(cm, com.marlonramon.predicts.domain.Authority.class.getName());
             createCache(cm, com.marlonramon.predicts.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.marlonramon.predicts.domain.Sweepstake.class.getName());
+            createCache(cm, com.marlonramon.predicts.domain.Sweepstake.class.getName() + ".users");
+            createCache(cm, com.marlonramon.predicts.domain.Bet.class.getName());
+            createCache(cm, com.marlonramon.predicts.domain.Championship.class.getName());
+            createCache(cm, com.marlonramon.predicts.domain.Team.class.getName());
+            createCache(cm, com.marlonramon.predicts.domain.Match.class.getName());
+            createCache(cm, com.marlonramon.predicts.domain.Round.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

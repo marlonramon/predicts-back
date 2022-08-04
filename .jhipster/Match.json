@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20220804032104",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "match",
+  "fields": [
+    {
+      "fieldName": "matchDate",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "homeScore",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "visitantScore",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Match",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "round",
+      "relationshipName": "round",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "team",
+      "relationshipName": "homeTeam",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "team",
+      "relationshipName": "visitantTeam",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl",
+  "skipClient": true
+}
